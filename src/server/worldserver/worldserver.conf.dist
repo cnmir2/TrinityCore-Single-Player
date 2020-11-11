@@ -73,7 +73,7 @@ RealmID = 1
 #        Example:     "@prefix@/share/trinitycore"
 #        Default:     "."
 
-DataDir = "."
+DataDir = "./data"
 
 #
 #    LogsDir
@@ -82,7 +82,7 @@ DataDir = "."
 #                     Logs directory must exists, or log file creation will be disabled.
 #        Default:     "" - (Log files will be stored in the current path)
 
-LogsDir = ""
+LogsDir = "logs"
 
 #
 #    LoginDatabaseInfo
@@ -199,7 +199,7 @@ BuildDirectory  = ""
 #        Example:     "../TrinityCore"
 #        Default:     ""
 
-SourceDirectory  = ""
+SourceDirectory  = "E:/Compile Server/Projects"
 
 #
 #    MySQLExecutable
@@ -210,7 +210,7 @@ SourceDirectory  = ""
 #                     "/usr/bin/mysql"
 #        Default:     ""
 
-MySQLExecutable = ""
+MySQLExecutable = "mysql/bin/mysql.exe"
 
 #
 #    IPLocationFile
@@ -836,7 +836,7 @@ StartDeathKnightPlayerLevel = 55
 #        Default:     0
 #                     100 - (1 Silver)
 
-StartPlayerMoney = 0
+StartPlayerMoney = 1000
 
 #
 #    MaxHonorPoints
@@ -891,7 +891,7 @@ RecruitAFriend.MaxDifference = 4
 #                     2  - (Enabled, GMs/Admins)
 #                     3  - (Enabled, Admins)
 
-DisableWaterBreath = 4
+DisableWaterBreath = 0
 
 #
 #    AllFlightPaths
@@ -908,7 +908,7 @@ AllFlightPaths = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-InstantFlightPaths = 0
+InstantFlightPaths = 1
 
 #
 #    AlwaysMaxSkillForLevel
@@ -917,7 +917,7 @@ InstantFlightPaths = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AlwaysMaxSkillForLevel = 0
+AlwaysMaxSkillForLevel = 1
 
 #
 #    ActivateWeather
@@ -1089,7 +1089,7 @@ Guild.BankEventLogRecordsCount = 25
 #        Range:       0-11
 #        Default:     2
 
-MaxPrimaryTradeSkill = 2
+MaxPrimaryTradeSkill = 11
 
 #
 #    MinPetitionSigns
@@ -1097,7 +1097,7 @@ MaxPrimaryTradeSkill = 2
 #        Range:       0-9
 #        Default:     9
 
-MinPetitionSigns = 9
+MinPetitionSigns = 0
 
 #
 #    MaxGroupXPDistance
@@ -1122,7 +1122,7 @@ MaxRecruitAFriendBonusDistance = 100
 #                     100 (Quests always grant full experience upon completion)
 #        Default:     0 - (Quests too low may grant no experience)
 
-MinQuestScaledXPRatio = 0
+MinQuestScaledXPRatio = 100
 
 #
 #    MinCreatureScaledXPRatio
@@ -1132,7 +1132,7 @@ MinQuestScaledXPRatio = 0
 #                     100 (Creature kills always grant full experience upon kill)
 #        Default:     0 - (Creatures too low may grant no experience)
 
-MinCreatureScaledXPRatio = 0
+MinCreatureScaledXPRatio = 100
 
 #
 #    MinDiscoveredScaledXPRatio
@@ -1141,7 +1141,7 @@ MinCreatureScaledXPRatio = 0
 #                     100 (Map exploration always grant full experience upon discovery)
 #        Default:     0 - (No experience granted when discovered area is too low level)
 
-MinDiscoveredScaledXPRatio = 0
+MinDiscoveredScaledXPRatio = 100
 
 #
 #    MailDeliveryDelay
@@ -1197,7 +1197,7 @@ ClientCacheVersion = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Event.Announce = 0
+Event.Announce = 1
 
 #
 #    BeepAtStart
@@ -1256,7 +1256,7 @@ DeletedCharacterTicketTrace = 0
 #           LFG_OPTION_ENABLE_RAID_BROWSER   = 2,     Enable the raid browser
 #        Default:     1
 
-DungeonFinder.OptionsMask = 1
+DungeonFinder.OptionsMask = 2
 
 #
 #   DBC.EnforceItemAttributes
@@ -1609,7 +1609,7 @@ TalentsInspecting = 1
 #                     radius will be used.
 #        Default:     60
 
-ThreatRadius = 60
+ThreatRadius = 30
 
 #
 #    Rate.Creature.Aggro
@@ -1618,7 +1618,7 @@ ThreatRadius = 60
 #                     1.5 - (Enabled, 150%)
 #                     0   - (Disabled, 0%)
 
-Rate.Creature.Aggro = 1
+Rate.Creature.Aggro = 0.5
 
 #
 #    CreatureFamilyFleeAssistanceRadius
@@ -1626,7 +1626,7 @@ Rate.Creature.Aggro = 1
 #        Default:     30 - (Enabled)
 #                     0  - (Disabled)
 
-CreatureFamilyFleeAssistanceRadius = 30
+CreatureFamilyFleeAssistanceRadius = 0
 
 #
 #    CreatureFamilyAssistanceRadius
@@ -2337,7 +2337,7 @@ Rate.Rest.Offline.InWilderness   = 1
 #        Description: Damage after fall rate.
 #        Default:     1
 
-Rate.Damage.Fall = 1
+Rate.Damage.Fall = 0
 
 #
 #    Rate.Auction.Time
@@ -2407,7 +2407,7 @@ Rate.Reputation.RecruitAFriendBonus = 0.1
 #        Description: Movement speed rate.
 #        Default:     1
 
-Rate.MoveSpeed = 1
+Rate.MoveSpeed = 1.15
 
 #
 #    Rate.InstanceResetTime
@@ -2518,7 +2518,7 @@ DurabilityLossChance.Block = 0.05
 #                     MaxPlayerLevel+1 - (Disabled)
 #                     -10              - (Enabled, Level 1+ characters have 10 minute duration)
 
-Death.SicknessLevel = 11
+Death.SicknessLevel = 81
 
 #
 #    Death.CorpseReclaimDelay.PvP
@@ -2548,7 +2548,7 @@ Death.Bones.BattlegroundOrArena = 1
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-Die.Command.Mode = 1
+Die.Command.Mode = 0
 
 #
 ###################################################################################################
@@ -3352,7 +3352,7 @@ AuctionHouseBot.Update.Interval = 20
 #       Default:     0 - (Disabled)
 #                    1 - (Enabled)
 
-AuctionHouseBot.Seller.Enabled = 0
+AuctionHouseBot.Seller.Enabled = 1
 
 #
 #    AuctionHouseBot.Alliance.Items.Amount.Ratio
@@ -3387,7 +3387,7 @@ AuctionHouseBot.MinTime = 1
 #       Description: Maximum time for the new auction in hours
 #       Default:     72 - (Hours)
 
-AuctionHouseBot.MaxTime = 72
+AuctionHouseBot.MaxTime = 2
 
 #
 #    AuctionHouseBot.Class.CLASS.Allow.Zero = 0
@@ -3446,7 +3446,7 @@ AuctionHouseBot.Items.Misc = 0
 #                    1 - (Enabled)
 
 AuctionHouseBot.Bind.No = 1
-AuctionHouseBot.Bind.Pickup = 0
+AuctionHouseBot.Bind.Pickup = 1
 AuctionHouseBot.Bind.Equip = 1
 AuctionHouseBot.Bind.Use = 1
 AuctionHouseBot.Bind.Quest = 0
@@ -3473,7 +3473,7 @@ AuctionHouseBot.ItemsPerCycle.Boost = 1000
 #                    Usually this value is used always when auction table is already initialised.
 #       Default:     20
 
-AuctionHouseBot.ItemsPerCycle.Normal = 20
+AuctionHouseBot.ItemsPerCycle.Normal = 50
 
 #
 #    AuctionHouseBot.BuyPrice.Seller
@@ -3584,8 +3584,8 @@ AuctionHouseBot.Items.Amount.White = 2000
 AuctionHouseBot.Items.Amount.Green = 2500
 AuctionHouseBot.Items.Amount.Blue = 1500
 AuctionHouseBot.Items.Amount.Purple = 1000
-AuctionHouseBot.Items.Amount.Orange = 0
-AuctionHouseBot.Items.Amount.Yellow = 0
+AuctionHouseBot.Items.Amount.Orange = 1000
+AuctionHouseBot.Items.Amount.Yellow = 1000
 
 #
 #    AuctionHouseBot.Class.*
@@ -3748,7 +3748,7 @@ AuctionHouseBot.Class.RandomStackRatio.Glyph = 0
 #       Default:     0 - (Disabled)
 #                    1 - (Enabled)
 
-AuctionHouseBot.Buyer.Enabled = 0
+AuctionHouseBot.Buyer.Enabled = 1
 
 #
 #    AuctionHouseBot.Buyer.FACTION.Enabled
@@ -4151,7 +4151,7 @@ NpcBot.Enable = 1
 #        Default:     1
 #        Max:         39
 
-NpcBot.MaxBots = 1
+NpcBot.MaxBots = 9
 
 #    NpcBot.MaxBotsPerClass
 #        Description: Maximum bots of each class allowed for players.
@@ -4166,7 +4166,7 @@ NpcBot.MaxBotsPerClass = 0
 #        Note2:       This parameter is set for each player at login.
 #        Default:     30
 
-NpcBot.BaseFollowDistance = 30
+NpcBot.BaseFollowDistance = 25
 
 #    NpcBot.XpReduction
 #        Description: XP percent penalty for each bot used starting with second.
@@ -4254,9 +4254,9 @@ NpcBot.Mult.Healing         = 1.0
 #                     1 - (NpcBot.Enable.DungeonFinder)
 
 NpcBot.Enable.Dungeon       = 1
-NpcBot.Enable.Raid          = 0
-NpcBot.Enable.BG            = 0
-NpcBot.Enable.Arena         = 0
+NpcBot.Enable.Raid          = 1
+NpcBot.Enable.BG            = 1
+NpcBot.Enable.Arena         = 1
 NpcBot.Enable.DungeonFinder = 1
 
 #    NpcBot.Limit.Dungeon
@@ -4335,12 +4335,12 @@ NpcBot.EquipmentDisplay.ShowHelm  = 1
 #                     1 - (NpcBot.NewClasses.SpellBreaker.Enable)
 #                     1 - (NpcBot.NewClasses.DarkRanger.Enable)
 
-NpcBot.NewClasses.Blademaster.Enable       = 1
-NpcBot.NewClasses.ObsidianDestroyer.Enable = 1
-NpcBot.NewClasses.Archmage.Enable          = 1
-NpcBot.NewClasses.Dreadlord.Enable         = 1
-NpcBot.NewClasses.SpellBreaker.Enable      = 1
-NpcBot.NewClasses.DarkRanger.Enable        = 1
+NpcBot.NewClasses.Blademaster.Enable       = 0
+NpcBot.NewClasses.ObsidianDestroyer.Enable = 0
+NpcBot.NewClasses.Archmage.Enable          = 0
+NpcBot.NewClasses.Dreadlord.Enable         = 0
+NpcBot.NewClasses.SpellBreaker.Enable      = 0
+NpcBot.NewClasses.DarkRanger.Enable        = 0
 
 #    NpcBot.Stats.Limits.Enable
 #        Description: Enable or disable stats limits for bots.
@@ -4446,7 +4446,7 @@ AutoBalance.BossInflectionMult = 1.0
 #        1 = Enabled (only in dungeons/raids)
 #        Default:     1
 
-AutoBalance.levelScaling = 0
+AutoBalance.levelScaling = 1
 
 #
 #     AutoBalance.levelHigherOffset
@@ -4553,7 +4553,7 @@ AutoBalance.rate.damage = 1.0
 #        Offset of players inside an instance
 #        Default:     0
 
-AutoBalance.playerCountDifficultyOffset = 2
+AutoBalance.playerCountDifficultyOffset = 1
 
 #
 #     AutoBalance.ForcedIDXX
